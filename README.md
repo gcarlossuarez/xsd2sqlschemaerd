@@ -6,7 +6,10 @@ This project is a continuation of the [xsd2pgsql](https://github.com/mikeshultz/
 
 # xsd2sqlschemaerd
 
-This script creates a SQL Server Database Schema based on an XSD (XML Schema Definition) file. It parses the XSD file, translates the XML schema types to PostgreSQL data types, and generates SQL statements to create the corresponding database tables and relationships.
+This script creates a SQL Server Database Schema based on an XSD (XML Schema Definition) file. It parses the XSD file, translates the XML schema types to PostgreSQL data types, and generates SQL statements to create the corresponding database tables and relationships
+
+# Demo
+https://youtu.be/1koj7333RS4
 
 ## Prerequisites
 
@@ -165,4 +168,5 @@ This script processes an XSD file to generate SQL Server database schemas. While
     - For very large XSD files, the recursive processing and graph analysis may lead to performance issues or long execution times.
 
 By understanding these limitations, you can better assess whether this script meets your requirements or if additional manual adjustments are necessary for your use case.
+
 
