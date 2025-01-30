@@ -4,9 +4,7 @@ Usage
 =====
 Ouput of ``--help``::
 
-    usage: xsd2sqlschemaerd.py [-h] [-f] [-a] [-d [NAME]] [-u [USERNAME]] [-p [PASSWORD]]
-                        [-n [HOSTNAME]] [-P [PORT]]
-                        FILE [FILE ...]
+    usage: usage: xsd2sqlschemaerd.py [--host] [--fail] [--as-is] [--database [NAME]] [--user [USERNAME]] [--password [PASSWORD]] [-n [HOSTNAME]] [--port [PORT]] FILE [FILE ...]
 
     Create a database based on an XSD schema. If no database name is specified,
     SQL is output to stdout.
@@ -30,4 +28,11 @@ Ouput of ``--help``::
                             DB Port (Default: 5432)
 ~~~~
 **Example:**
-python.exe .\xsd2sqlschemaerd.py ".\Examples\EsquemaFacturaE.xsd"
+Without connecting DB
+---------------------
+python.exe xsd2sqlschemaerd.py ".\\tests\\my_example.xsd"
+    
+    
+With connecting DB
+------------------
+python.exe xsd2sqlschemaerd.py --database PruebaXsd2DBSchema --host "my_server\my_instance" --user my_user --password my_user ".\\tests\\my_example.xsd"
