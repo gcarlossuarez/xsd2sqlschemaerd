@@ -1,0 +1,54 @@
+# Archivos compilados de Python
+*.py[co]
+*.pyd  # También ignora archivos compilados en Windows
+
+# Paquetes y distribuciones
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+
+# Instaladores y logs
+pip-log.txt
+
+# Reportes de pruebas y cobertura
+.coverage
+.tox
+
+# Traducciones
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+
+# Ignorar directorios que no deben subirse
+Backups/
+ValidateAux/
+test/private/
+venv/
+
+# Ignorar archivos que no deben subirse
+result.txt
+
+# Ignorar entornos virtuales de Python
+env/
+.venv/
+venv/
+
+# Ignorar caché de Python
+__pycache__/
+
+# Ignorar archivos de configuración de VSCode y PyCharm
+.vscode/
+.idea/
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db

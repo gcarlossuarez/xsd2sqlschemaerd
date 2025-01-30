@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Payment">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="CreditCard" type="xs:string"/>
+                <xs:element name="PayPal" type="xs:string"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

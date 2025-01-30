@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Parent">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ChildRef" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Child">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ParentRef" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

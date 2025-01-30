@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Root element -->
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Example" type="ExampleChoice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Complex type with choices -->
+  <xs:complexType name="ExampleChoice">
+    <xs:choice>
+      <xs:element name="Option1" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Option 1: A string value.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Option2" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>Option 2: An integer value.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:choice>
+        <xs:element name="NestedOption1" type="xs:date">
+          <xs:annotation>
+            <xs:documentation>Nested Option 1: A date value.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="NestedOption2" type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>Nested Option 2: A boolean value.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+    </xs:choice>
+  </xs:complexType>
+
+</xs:schema>

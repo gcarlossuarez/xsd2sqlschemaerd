@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://example.com/test" xmlns="http://example.com/test">
+    <xs:element name="EntityChoice">
+        <xs:complexType>
+            <xs:choice>
+                <xs:choice>
+                    <xs:element name="LegalEntity" type="LegalEntityType">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">Legal entity and others.</xs:documentation>
+                            <xs:documentation xml:lang="es">Persona jurídica y otras.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Individual" type="IndividualType">
+                        <xs:annotation>
+                            <xs:documentation xml:lang="en">Individual.</xs:documentation>
+                            <xs:documentation xml:lang="es">Persona física.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:choice>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Types -->
+    <xs:complexType name="LegalEntityType">
+        <xs:sequence>
+            <xs:element name="EntityName" type="xs:string"/>
+            <xs:element name="RegistrationNumber" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="IndividualType">
+        <xs:sequence>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="LastName" type="xs:string"/>
+            <xs:element name="BirthDate" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
