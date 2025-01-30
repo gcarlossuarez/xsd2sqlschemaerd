@@ -33,6 +33,7 @@ Backups/
 ValidateAux/
 test/private/
 venv/
+demos/
 
 # Ignorar archivos que no deben subirse
 result.txt
