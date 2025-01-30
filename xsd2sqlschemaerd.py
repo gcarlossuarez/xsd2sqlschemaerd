@@ -1,4 +1,4 @@
-# This script creates a SQL Server Database Schema based on an XSD (XML Schema Definition) file. It parses the XSD file, translates the XML schema types to PostgreSQL data types, and generates SQL statements to create the corresponding database tables and relationships.
+# This script creates a SQL Server Database Schema based on an XSD (XML Schema Definition) file. It parses the XSD file, translates the XML schema types to SQl Server data types, and generates SQL statements to create the corresponding database tables and relationships.
 '''
 xsd2sqlschemaerd.py
 Functions
