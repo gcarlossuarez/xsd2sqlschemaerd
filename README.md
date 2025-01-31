@@ -117,7 +117,7 @@ Without connecting DB
 python.exe xsd2sqlschemaerd.py ".\\tests\\my_example.xsd"
     
 With connecting DB
-python.exe xsd2sqlschemaerd.py --database PruebaXsd2DBSchema --host "my_server\my_instance" --user my_user --password my_user ".\\tests\\my_example.xsd"
+python.exe xsd2sqlschemaerd.py --database PruebaXsd2DBSchema --host "my_server\my_instance" --user my_user --password my_password ".\\tests\\my_example.xsd"
 ```
 
 2. **Output**: The script produces:
